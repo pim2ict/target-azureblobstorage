@@ -12,7 +12,8 @@ setup(
     install_requires=[
         "setuptools<82", # Fix missing dependency
         "singer-python>=5.0.12",
-        "azure-storage-blob==2.1.0"
+        "azure-storage-blob==2.1.0",
+        "pyarrow>=14.0.0"
     ],
     entry_points="""
     [console_scripts]

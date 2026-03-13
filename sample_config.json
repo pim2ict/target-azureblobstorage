@@ -4,5 +4,8 @@
   "account_name" : "account_name",
   "account_key" : "account_key",
   "start_date": "2017-01-01T00:00:00Z",
-  "container_name": "myblobstoragecontainer"
+  "container_name": "myblobstoragecontainer",
+  "output_format": "csv",
+  "parquet_batch_size": 10000,
+  "parquet_compression": "snappy"
 }
