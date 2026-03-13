@@ -123,7 +123,7 @@ def persist_lines(block_blob_service, append_blob_service, blob_container_name, 
             state = o['value']
 
             # if currently_syncing == NONE upload file
-            if not state['currently_syncing'] and os.path.exists(parent_dir):
+            if not state.get('currently_syncing') and os.path.exists(parent_dir):
                 for _file in os.listdir(parent_dir):
 
                     file_path = os.path.join(parent_dir, _file)
