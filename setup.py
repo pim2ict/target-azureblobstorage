@@ -10,6 +10,7 @@ setup(
     classifiers=["Programming Language :: Python :: 3 :: Only"],
     py_modules=["target_azureblobstorage"],
     install_requires=[
+        "setuptools<82", # Fix missing dependency
         "singer-python>=5.0.12",
         "azure-storage-blob==2.1.0"
     ],
